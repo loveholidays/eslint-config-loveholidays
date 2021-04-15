@@ -18,8 +18,6 @@ jobs:
         with:
           node-version: 14
       - run: npm ci --ignore-scripts
-      # - run: npm run build
-      # - run: npm run test
       - name: version_and_publish
         run: |
           git config user.name $GITHUB_ACTOR
