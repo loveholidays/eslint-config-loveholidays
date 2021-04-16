@@ -4,7 +4,7 @@ on:
   # find out the `if` condition to run workflow_dispatch
   workflow_dispatch:
     name:
-      required: true
+      description: 'Hack: To identify a manual run'
       default: 'Manual'
   pull_request:
     types: closed
