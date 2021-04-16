@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: refs/heads/master
+          ref: refs/heads/main
           persist-credentials: false
       - name: Install Node.js
         uses: actions/setup-node@v1
@@ -28,7 +28,7 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
           npm version major
           npm publish
-          git push gh-origin HEAD:master --follow-tags
+          git push gh-origin HEAD:main --follow-tags
         env:
           CI: true
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
