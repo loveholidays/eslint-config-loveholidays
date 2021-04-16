@@ -4,7 +4,7 @@ on:
   # find out the `if` condition to run workflow_dispatch
   workflow_dispatch:
     name:
-      required: false
+      required: true
       default: 'Manual'
   pull_request:
     types: closed
