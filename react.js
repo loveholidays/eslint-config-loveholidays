@@ -15,5 +15,6 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',
     'react/no-array-index-key': 'off',
+    'react/destructuring-assignment': 'off',
   }
 }

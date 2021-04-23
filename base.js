@@ -10,6 +10,7 @@ module.exports = {
     '@typescript-eslint/no-shadow': 'off',
     'no-return-assign': ['error', 'except-parens'],
     'no-plusplus': ['error', { 'allowForLoopAfterthoughts': true }],
+    '@typescript-eslint/return-await': 'off',
 
     // -- No default exports
     'import/no-default-export': 'error',
