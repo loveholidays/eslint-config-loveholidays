@@ -1,6 +1,6 @@
 {
   "name": "@loveholidays/eslint-config-loveholidays",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "eslint config for typescript/react projects",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
