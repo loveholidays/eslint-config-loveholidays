@@ -7,9 +7,6 @@ on:
       name:
         description: 'Hack: To identify a manual run'
         default: 'Manual'
-      minor:
-        description: 'type minor to deploy a minor version'
-        default: ''
   pull_request:
     types: closed
 
@@ -29,14 +26,13 @@ jobs:
       - run: npm ci --ignore-scripts
       - name: version_and_publish
         run: |
-          echo "${{ github.event.inputs.minor == 'minor' || 'major'}}"
-          # git config user.name $GITHUB_ACTOR
-          # git config user.email gh-actions-${GITHUB_ACTOR}@github.com
-          # git remote add gh-origin https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          # echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-          # npm version ${{ github.event.inputs.minor === 'minor' || 'major'}}
-          # npm publish
-          # git push gh-origin HEAD:main --follow-tags
+          git config user.name $GITHUB_ACTOR
+          git config user.email gh-actions-${GITHUB_ACTOR}@github.com
+          git remote add gh-origin https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+          npm version major
+          npm publish
+          git push gh-origin HEAD:main --follow-tags
         env:
           CI: true
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
