@@ -1,37 +1,15 @@
 # eslint-config-loveholidays
-eslint config for typescript/react projects
+This repository is where all common eslint related config, rules, packages and binary are aggregated into one package that can be installed.
 
 ## Installation
+`npm i -D @loveholidays/eslint-config-loveholidays`
 
-### Install peer depenendcies
+Eslint and the plugins will be installed via this package so you do not need to install them separately.
 
-List peer dependendcies
-
-`npm info "@loveholidays/eslint-config-loveholidays@latest" peerDependencies`
-
-Install ESLint plugins
-ESLint plugins used by this config must also be installed within your project.
-
-```
-npm install eslint-plugin-import \
-            eslint-plugin-jsx-a11y \
-            eslint-plugin-react \
-            eslint-plugin-react-hooks \
-            @typescript-eslint/eslint-plugin \
-            --save-dev
-```
-
-If you don't need React support:
-
-```
-npm install eslint-plugin-import \
-            @typescript-eslint/eslint-plugin \
-            --save-dev
-```
 
 ## Setup
 
-Extend either `@loveholidays/eslint-config-loveholidays/react` or `@loveholidays/eslint-config-loveholidays` and add `parserOptions.project` 
+Extend either `@loveholidays/eslint-config-loveholidays/react` or `@loveholidays/eslint-config-loveholidays` and add `parserOptions.project` to your eslintrc.
 
 ```js
 // .eslintrc
@@ -42,3 +20,9 @@ Extend either `@loveholidays/eslint-config-loveholidays/react` or `@loveholidays
   }  
 }
 ```
+
+## Publishing
+
+When a pull request is merged a new major version will be published automatically.
+
+You can also manually trigger the publish workflow in github actions.
