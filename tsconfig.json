@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "module": "esnext",
+    "target": "es2019",
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": "./test",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir":"dist"
+  },
+  "files": [
+    "node_modules/jest-playwright-preset/types/global.d.ts",
+    "node_modules/expect-playwright/global.d.ts"
+  ],
+  "include": [
+    "test/**/*.ts",
+    "test/**/*.tsx",
+  ],
+  "exclude": [
+    "node_modules",
+  ]
+}
