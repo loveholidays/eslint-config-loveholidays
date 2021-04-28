@@ -3,7 +3,8 @@
   "version": "6.0.0",
   "description": "eslint config for typescript/react projects",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --ext .ts,.tsx ./test",
+    "lint:info": "eslint --print-config .eslintrc.js"
   },
   "repository": {
     "type": "git",
