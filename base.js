@@ -1,7 +1,9 @@
 module.exports = {
   rules: {
     // -- Generic rules
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'import/no-extraneous-dependencies': ['error', {
+      devDependencies: true
+    }],
     'import/no-unresolved': 'off',
     'newline-before-return': 'error',
     'no-console': ['warn'],
@@ -22,7 +24,13 @@ module.exports = {
     'array-bracket-spacing': ['error', 'always'],
     'comma-dangle': ['error', 'always-multiline'],
     '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
-    'max-len': ['error', { code: 100, ignoreComments: true, ignoreUrls: true, ignoreStrings: true, }],
+    'max-len': ['error', {
+      code: 100,
+      ignoreComments: true,
+      ignoreUrls: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true
+    }],
     'no-multiple-empty-lines': ['error', {
       max: 1,
       maxEOF: 1,
