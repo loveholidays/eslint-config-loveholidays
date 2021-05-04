@@ -19,7 +19,16 @@ module.exports = {
     'import/prefer-default-export': 'off',
 
     // -- Code formatting
-    '@typescript-eslint/type-annotation-spacing': ['error', { before: false, after: true }],
+    '@typescript-eslint/type-annotation-spacing': ['error', {
+      before: false,
+      after: true,
+      overrides: {
+        arrow: {
+          before: true,
+          after: true,
+        },
+      },
+    }],
     '@typescript-eslint/member-delimiter-style': 'error',
     'array-bracket-spacing': ['error', 'always'],
     'comma-dangle': ['error', 'always-multiline'],
