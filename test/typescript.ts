@@ -10,6 +10,7 @@ interface DesturctureArgsParams {
   a: string;
   b: number;
   c: string;
+  d?: boolean;
   f?: () => void;
 }
 
