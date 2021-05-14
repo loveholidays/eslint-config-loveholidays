@@ -45,6 +45,27 @@ module.exports = {
       maxEOF: 1,
       maxBOF: 0,
     }],
+
+    // -- Typescript
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        types: {
+          "String": {
+            "message": "Use string instead",
+            "fixWith": "string"
+          },
+          "Number": {
+            "message": "Use number instead",
+            "fixWith": "number"
+          },
+          "Boolean": {
+            "message": "Use boolean instead",
+            "fixWith": "boolean"
+          },
+        }
+      }
+    ]
   },
 
   overrides: [
