@@ -3,8 +3,6 @@ const a = {
   two: 2,
 };
 
-console.log(a);
-
 const immediateReturnFunc = () => true;
 immediateReturnFunc();
 
@@ -12,6 +10,8 @@ interface DesturctureArgsParams {
   a: string;
   b: number;
   c: string;
+  d?: boolean;
+  f?: () => void;
 }
 
 const desturctureArgs = ({ a, b, c }: DesturctureArgsParams) => {
@@ -22,3 +22,6 @@ const desturctureArgs = ({ a, b, c }: DesturctureArgsParams) => {
 
 desturctureArgs({ a: 'a', b: 1, c: 'c' });
 
+// a very lonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnng comment
+const templateString = `${a.one} ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss`;
+console.log(templateString);

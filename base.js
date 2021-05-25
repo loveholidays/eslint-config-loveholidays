@@ -1,7 +1,9 @@
 module.exports = {
   rules: {
     // -- Generic rules
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'import/no-extraneous-dependencies': ['error', {
+      devDependencies: true
+    }],
     'import/no-unresolved': 'off',
     'newline-before-return': 'error',
     'no-console': ['warn'],
@@ -17,17 +19,53 @@ module.exports = {
     'import/prefer-default-export': 'off',
 
     // -- Code formatting
-    '@typescript-eslint/type-annotation-spacing': ['error', { before: false, after: true }],
+    '@typescript-eslint/type-annotation-spacing': ['error', {
+      before: false,
+      after: true,
+      overrides: {
+        arrow: {
+          before: true,
+          after: true,
+        },
+      },
+    }],
     '@typescript-eslint/member-delimiter-style': 'error',
     'array-bracket-spacing': ['error', 'always'],
     'comma-dangle': ['error', 'always-multiline'],
     '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
-    'max-len': ['error', { code: 100, ignoreComments: true, ignoreUrls: true, ignoreStrings: true, }],
+    'max-len': ['error', {
+      code: 100,
+      ignoreComments: true,
+      ignoreUrls: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true
+    }],
     'no-multiple-empty-lines': ['error', {
       max: 1,
       maxEOF: 1,
       maxBOF: 0,
     }],
+
+    // -- Typescript
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        types: {
+          "String": {
+            "message": "Use string instead",
+            "fixWith": "string"
+          },
+          "Number": {
+            "message": "Use number instead",
+            "fixWith": "number"
+          },
+          "Boolean": {
+            "message": "Use boolean instead",
+            "fixWith": "boolean"
+          },
+        }
+      }
+    ]
   },
 
   overrides: [
