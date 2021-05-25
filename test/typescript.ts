@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const a = {
   one: 1,
   two: 2,
