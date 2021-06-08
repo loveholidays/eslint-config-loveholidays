@@ -11,7 +11,7 @@ updates:
   schedule:
     interval: daily
     time: "09:00"
-  version-strategy: increase
+  versioning-strategy: increase
   open-pull-requests-limit: 20
   registries:
   - npm-registry-registry-npmjs-org
