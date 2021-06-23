@@ -3,7 +3,9 @@ module.exports = {
     'eslint-config-airbnb-typescript',
     './base.js',
   ],
-  
+  plugins: [
+    '@studysync/persnickety',
+  ],
   rules: {
     'react/jsx-first-prop-new-line': ['error', 'multiline'],
     'react/jsx-max-props-per-line': ['error', { 'maximum': 1, 'when': 'always' }],
@@ -16,5 +18,6 @@ module.exports = {
     'react/prop-types': 'off',
     'react/no-array-index-key': 'off',
     'react/destructuring-assignment': 'off',
+    '@studysync/persnickety/jsx-child-location': 'error'
   }
 }

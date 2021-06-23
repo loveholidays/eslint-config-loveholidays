@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "jsx": "preserve",
+    "jsx": "react",
     "module": "esnext",
     "target": "es2019",
     "moduleResolution": "node",
@@ -15,11 +15,10 @@
     "baseUrl": "./test",
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "outDir":"dist"
+    "outDir":"dist",
   },
-  "files": [
-    "node_modules/jest-playwright-preset/types/global.d.ts",
-    "node_modules/expect-playwright/global.d.ts"
+  "typeRoots": [
+    "node_modules/@types",
   ],
   "include": [
     "test/**/*.ts",
