@@ -19,6 +19,12 @@ const desturctureArgs = ({ a, b, c }: DesturctureArgsParams) => {
   console.log(a);
   console.log(b);
   console.log(c);
+
+  if (b) {
+    return b;
+  }
+
+  return null;
 };
 
 desturctureArgs({ a: 'a', b: 1, c: 'c' });

@@ -45,6 +45,14 @@ module.exports = {
       maxEOF: 1,
       maxBOF: 0,
     }],
+    '@typescript-eslint/brace-style': [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": false
+      }
+    ],
+    'curly': ['error', 'all'],
 
     // -- Typescript
     "@typescript-eslint/ban-types": [
