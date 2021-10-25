@@ -18,6 +18,7 @@ module.exports = {
     'react/prop-types': 'off',
     'react/no-array-index-key': 'off',
     'react/destructuring-assignment': 'off',
-    '@studysync/persnickety/jsx-child-location': 'error'
+    'react/require-default-props': 'off',
+    '@studysync/persnickety/jsx-child-location': 'error',
   }
 }
