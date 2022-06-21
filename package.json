@@ -19,7 +19,7 @@
   "homepage": "https://github.com/loveholidays/eslint-config-loveholidays#readme",
   "dependencies": {
     "@studysync/eslint-plugin-persnickety": "^1.0.5",
-    "@typescript-eslint/eslint-plugin": "5.26.0",
+    "@typescript-eslint/eslint-plugin": "5.29.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-typescript": "^12.3.1",
