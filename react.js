@@ -17,6 +17,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',
     'react/no-array-index-key': 'off',
+    'react/no-unused-prop-types': 'off', // Too many false positives
     'react/destructuring-assignment': 'off',
     'react/require-default-props': 'off',
     '@studysync/persnickety/jsx-child-location': 'error',
