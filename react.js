@@ -11,7 +11,7 @@ module.exports = {
     'react/jsx-max-props-per-line': ['error', { 'maximum': 1, 'when': 'always' }],
     'react/jsx-indent': ['error', 2, { checkAttributes: true, indentLogicalExpressions: true }],
     'react/jsx-curly-spacing': ['error', 'never'],
-    'react/jsx-fragments': ['error', 'element'],
+    'react/jsx-fragments': ['error', 'syntax'],
     'react/jsx-key': 'error',
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-props-no-spreading': 'off',
