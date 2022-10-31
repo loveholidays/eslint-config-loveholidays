@@ -14,7 +14,7 @@ Extend either `@loveholidays/eslint-config-loveholidays/react` or `@loveholidays
 ```js
 // .eslintrc
 {
-  extends: ['airbnb-typescript'],
+  extends: ['@loveholidays/eslint-config-loveholidays'],
     parserOptions: {
     project: './tsconfig.json',
   }  

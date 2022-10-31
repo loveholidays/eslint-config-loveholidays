@@ -1,4 +1,8 @@
 module.exports = {
+  plugins: [
+    'import'
+  ],
+
   rules: {
     // -- Generic rules
     'import/no-extraneous-dependencies': ['error', {
@@ -19,6 +23,15 @@ module.exports = {
     'import/prefer-default-export': 'off',
 
     // -- Code formatting
+    'indent': 'off',
+    '@typescript-eslint/indent': ['error', 2, {
+      'SwitchCase': 1,
+      'ignoredNodes': [
+        'FunctionExpression > .params[decorators.length > 0]',
+        'FunctionExpression > .params > :matches(Decorator, :not(:first-child))',
+        'ClassBody.body > PropertyDefinition[decorators.length > 0] > .key',
+      ],
+    }],
     '@typescript-eslint/type-annotation-spacing': ['error', {
       before: false,
       after: true,
