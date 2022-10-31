@@ -1,11 +1,17 @@
 module.exports = {
   extends: [
     'eslint-config-airbnb-typescript',
+    'plugin:react/recommended',
     './base.js',
   ],
   plugins: [
     '@studysync/persnickety',
   ],
+  settings: {
+    react: {
+      version: '16'
+    }
+  },
   rules: {
     'react/jsx-first-prop-new-line': ['error', 'multiline'],
     'react/jsx-max-props-per-line': ['error', { 'maximum': 1, 'when': 'always' }],
