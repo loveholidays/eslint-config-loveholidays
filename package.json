@@ -19,18 +19,18 @@
   "homepage": "https://github.com/loveholidays/eslint-config-loveholidays#readme",
   "dependencies": {
     "@studysync/eslint-plugin-persnickety": "^1.0.5",
-    "@typescript-eslint/eslint-plugin": "5.33.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-airbnb-typescript": "^12.3.1",
+    "@typescript-eslint/eslint-plugin": "5.41.0",
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
-    "@types/react": "^17.0.38",
-    "react": "^17.0.2",
-    "typescript": "^4.7.4"
+    "@types/react": "^18.0.24",
+    "react": "^18.2.0",
+    "typescript": "^4.8.4"
   }
 }
