@@ -66,6 +66,7 @@ module.exports = {
       }
     ],
     'curly': ['error', 'all'],
+    'key-spacing': "error",
 
     // -- Typescript
     "@typescript-eslint/ban-types": [
