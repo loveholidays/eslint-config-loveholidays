@@ -27,5 +27,6 @@ module.exports = {
     'react/destructuring-assignment': 'off',
     'react/require-default-props': 'off',
     '@studysync/persnickety/jsx-child-location': 'error',
+    'react/jsx-boolean-value': 2
   }
 }
