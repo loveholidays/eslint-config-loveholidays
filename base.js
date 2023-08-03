@@ -47,7 +47,7 @@ module.exports = {
     'comma-dangle': ['error', 'always-multiline'],
     '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
     'max-len': ['error', {
-      code: 120,
+      code: 100,
       ignoreComments: true,
       ignoreUrls: true,
       ignoreStrings: true,
