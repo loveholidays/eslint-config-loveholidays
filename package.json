@@ -1,6 +1,6 @@
 {
   "name": "@loveholidays/eslint-config-loveholidays",
-  "version": "83.0.0",
+  "version": "84.0.0",
   "description": "eslint config for typescript/react projects",
   "scripts": {
     "lint": "eslint --ext .ts,.tsx ./test",
@@ -19,7 +19,7 @@
   "homepage": "https://github.com/loveholidays/eslint-config-loveholidays#readme",
   "dependencies": {
     "@studysync/eslint-plugin-persnickety": "^1.0.5",
-    "@typescript-eslint/eslint-plugin": "6.5.0",
+    "@typescript-eslint/eslint-plugin": "6.6.0",
     "eslint": "^8.48.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
@@ -29,7 +29,7 @@
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.20",
+    "@types/react": "^18.2.21",
     "react": "^18.2.0",
     "typescript": "^5.2.2"
   }
