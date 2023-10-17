@@ -1,6 +1,6 @@
 {
   "name": "@loveholidays/eslint-config-loveholidays",
-  "version": "96.0.0",
+  "version": "97.0.0",
   "description": "eslint config for typescript/react projects",
   "scripts": {
     "lint": "eslint --ext .ts,.tsx ./test",
