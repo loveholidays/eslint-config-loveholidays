@@ -59,35 +59,36 @@ module.exports = {
       maxBOF: 0,
     }],
     '@typescript-eslint/brace-style': [
-      "error",
-      "1tbs",
+      'error',
+      '1tbs',
       {
-        "allowSingleLine": false
+        'allowSingleLine': false
       }
     ],
     'curly': ['error', 'all'],
-    'key-spacing': "error",
+    'key-spacing': 'error',
 
     // -- Typescript
-    "@typescript-eslint/ban-types": [
-      "error",
+    '@typescript-eslint/ban-types': [
+      'error',
       {
         types: {
-          "String": {
-            "message": "Use string instead",
-            "fixWith": "string"
+          'String': {
+            'message': 'Use string instead',
+            'fixWith': 'string'
           },
-          "Number": {
-            "message": "Use number instead",
-            "fixWith": "number"
+          'Number': {
+            'message': 'Use number instead',
+            'fixWith': 'number'
           },
-          "Boolean": {
-            "message": "Use boolean instead",
-            "fixWith": "boolean"
+          'Boolean': {
+            'message': 'Use boolean instead',
+            'fixWith': 'boolean'
           },
         }
       }
-    ]
+    ],
+    '@typescript-eslint/no-namespace': 'error',
   },
 
   overrides: [
