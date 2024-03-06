@@ -1,16 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 interface ComponentProps {
   optionalProp?: string;
 }
 
-export const react: React.FC<ComponentProps> = ({
+export const MyComponent: React.FC<ComponentProps> = ({
   optionalProp,
-}) => (
-  <div
-    data-id="id"
-    data-test-id="test-id"
-  >
-    Hello {optionalProp}
-  </div>
-);
+}) => {
+  const [ state, setState ] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!state) {
+      setState('Hello World!');
+    }
+  }, [ state ]);
+
+  return (
+    <div
+      data-id="id"
+      data-test-id="test-id"
+    >
+      Hello {optionalProp}
+    </div>
+  );
+};
