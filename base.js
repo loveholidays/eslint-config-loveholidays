@@ -67,6 +67,10 @@ module.exports = {
     ],
     'curly': ['error', 'all'],
     'key-spacing': 'error',
+    'react/jsx-curly-brace-presence': [
+      'error',
+      { props: 'never', children: 'never', propElementValues: 'always' },
+    ],
 
     // -- Typescript
     '@typescript-eslint/ban-types': [
