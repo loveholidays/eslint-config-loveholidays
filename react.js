@@ -28,5 +28,9 @@ module.exports = {
     'react/destructuring-assignment': 'off',
     'react/require-default-props': 'off',
     '@studysync/persnickety/jsx-child-location': 'error',
+    'react/jsx-curly-brace-presence': [
+      'error',
+      { props: 'never', children: 'never', propElementValues: 'always' },
+    ],
   }
 }
