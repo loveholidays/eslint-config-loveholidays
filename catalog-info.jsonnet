@@ -11,7 +11,7 @@ Define([
     lifecycle='production',
     repository='loveholidays/eslint-config-loveholidays',
     techdocs='url:https://github.com/loveholidays/eslint-config-loveholidays/tree/main',
-    owner='digital-product-infrastructure',
+    owner='web-infrastructure',
     tags=['nodejs', 'typescript', 'eslint', 'open-source'],
     links=[
       Link('NPM package', 'https://www.npmjs.com/package/@loveholidays/eslint-config-loveholidays'),
