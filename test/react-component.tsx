@@ -4,9 +4,7 @@ interface ComponentProps {
   optionalProp?: string;
 }
 
-export const MyComponent: React.FC<ComponentProps> = ({
-  optionalProp,
-}) => {
+export const MyComponent: React.FC<ComponentProps> = ({ optionalProp }) => {
   const [ state, setState ] = useState<string | null>(null);
 
   useEffect(() => {
