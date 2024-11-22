@@ -5,17 +5,15 @@ module.exports = {
     'plugin:react-hooks/recommended',
     './base.js',
   ],
-  plugins: [
-    '@studysync/persnickety',
-  ],
+  plugins: ['@studysync/persnickety'],
   settings: {
     react: {
-      version: '16.2'
-    }
+      version: '16.2',
+    },
   },
   rules: {
     'react/jsx-first-prop-new-line': ['error', 'multiline'],
-    'react/jsx-max-props-per-line': ['error', { 'maximum': 1, 'when': 'always' }],
+    'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'always' }],
     'react/jsx-indent': ['error', 2, { checkAttributes: true, indentLogicalExpressions: true }],
     'react/jsx-curly-spacing': ['error', 'never'],
     'react/jsx-fragments': ['error', 'element'],
@@ -32,5 +30,5 @@ module.exports = {
       'error',
       { props: 'never', children: 'never', propElementValues: 'always' },
     ],
-  }
-}
+  },
+};
