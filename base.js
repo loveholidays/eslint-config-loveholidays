@@ -1,17 +1,17 @@
 module.exports = {
-  plugins: ['import'],
+  plugins: [ 'import' ],
 
   rules: {
     // -- Generic rules
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'import/no-extraneous-dependencies': [ 'error', { devDependencies: true } ],
     'import/no-unresolved': 'off',
     'newline-before-return': 'error',
-    'no-console': ['warn'],
+    'no-console': [ 'warn' ],
     'no-restricted-syntax': 'off',
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': 'off',
-    'no-return-assign': ['error', 'except-parens'],
-    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+    'no-return-assign': [ 'error', 'except-parens' ],
+    'no-plusplus': [ 'error', { allowForLoopAfterthoughts: true } ],
     '@typescript-eslint/return-await': 'off',
 
     // -- No default exports
@@ -37,9 +37,9 @@ module.exports = {
       { before: false, after: true, overrides: { arrow: { before: true, after: true } } },
     ],
     '@typescript-eslint/member-delimiter-style': 'error',
-    'array-bracket-spacing': ['error', 'always'],
-    'comma-dangle': ['error', 'always-multiline'],
-    '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
+    'array-bracket-spacing': [ 'error', 'always' ],
+    'comma-dangle': [ 'error', 'always-multiline' ],
+    '@typescript-eslint/comma-dangle': [ 'error', 'always-multiline' ],
     'max-len': [
       'error',
       {
@@ -50,9 +50,9 @@ module.exports = {
         ignoreTemplateLiterals: true,
       },
     ],
-    'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 1, maxBOF: 0 }],
-    '@typescript-eslint/brace-style': ['error', '1tbs', { allowSingleLine: false }],
-    curly: ['error', 'all'],
+    'no-multiple-empty-lines': [ 'error', { max: 1, maxEOF: 1, maxBOF: 0 } ],
+    '@typescript-eslint/brace-style': [ 'error', '1tbs', { allowSingleLine: false } ],
+    curly: [ 'error', 'all' ],
     'key-spacing': 'error',
 
     // -- Typescript
@@ -71,7 +71,7 @@ module.exports = {
 
   overrides: [
     {
-      files: ['src/**/*.spec.ts', 'src/**/*.spec.tsx'],
+      files: [ 'src/**/*.spec.ts', 'src/**/*.spec.tsx' ],
       rules: {
         'max-len': 'off',
       },

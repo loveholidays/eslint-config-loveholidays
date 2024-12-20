@@ -14,7 +14,8 @@
     "url": "https://github.com/loveholidays/eslint-config-loveholidays/issues"
   },
   "scripts": {
-    "lint": "eslint --ext .ts,.tsx ./test",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "lint:info": "eslint --print-config .eslintrc.js"
   },
   "dependencies": {
