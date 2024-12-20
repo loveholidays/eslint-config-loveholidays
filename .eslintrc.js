@@ -1,11 +1,13 @@
 module.exports = {
-  extends: ['./react'],
+  extends: [ './react' ],
   env: {
     browser: true,
     node: true,
-    es2021: true
+    es2021: true,
   },
   parserOptions: {
     project: './tsconfig.json',
+    warnOnUnsupportedTypeScriptVersion: false,
   },
+  reportUnusedDisableDirectives: true,
 };

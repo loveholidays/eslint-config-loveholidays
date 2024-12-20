@@ -1,30 +1,20 @@
 {
+  "include": [".*.js", "**/*.js", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"],
   "compilerOptions": {
-    "jsx": "react",
     "module": "esnext",
     "target": "es2019",
     "moduleResolution": "node",
+
+    "jsx": "react",
+    "allowJs": true,
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+
     "strict": true,
     "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "sourceMap": true,
-    "declaration": true,
-    "declarationDir": "dist/types",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "baseUrl": "./test",
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "outDir":"dist",
-  },
-  "typeRoots": [
-    "node_modules/@types",
-  ],
-  "include": [
-    "test/**/*.ts",
-    "test/**/*.tsx",
-  ],
-  "exclude": [
-    "node_modules",
-  ]
+    "noUnusedLocals": true
+  }
 }
