@@ -1,5 +1,5 @@
 module.exports = {
-  extends: [ './react' ],
+  extends: ['./react'],
   env: {
     browser: true,
     node: true,

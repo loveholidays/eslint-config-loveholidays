@@ -5,13 +5,13 @@ interface ComponentProps {
 }
 
 export const MyComponent: React.FC<ComponentProps> = ({ optionalProp }) => {
-  const [ state, setState ] = useState<string | null>(null);
+  const [state, setState] = useState<string | null>(null);
 
   useEffect(() => {
     if (!state) {
       setState('Hello World!');
     }
-  }, [ state ]);
+  }, [state]);
 
   return (
     <div
